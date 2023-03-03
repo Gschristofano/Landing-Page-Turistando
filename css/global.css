@@ -8,3 +8,30 @@
     --white: #FFFFFF;
     --black: #000000;
 }
+h1{
+    font-weight: 700;
+    font-size: 3rem;
+}
+h2{
+    font-weight: 500;
+    font-size: 2rem;
+}
+h3{
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+p{
+    font-weight: 300;
+    font-size: 1.125rem;
+}
+a{
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.cont-main{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}

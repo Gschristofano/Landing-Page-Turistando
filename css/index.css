@@ -1,0 +1,97 @@
+body{
+    width: 100vw;
+    height: 100vmin;
+    overflow-x: hidden;
+    background: var(--lightGray);
+}
+/* INICIO HEADER ============== */
+    header{
+        width: 100%;
+        height: 100px;
+
+        background: var(--darkBlue);
+        color: var(--white);
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .cont-header{
+        width: 80%;
+        height: 80px;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .cont-logo{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .cont-logo h1{
+        margin-left: 2%;
+    }
+    .menu{
+        width: 280px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .list-menu{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;   
+    }
+    .list-menu li a{
+        color: var(--white);
+    }
+/* FIM HEADER ======================= */
+/* INICIO MAIN ====================== */
+    /* INICIO SECTION | apresentacao ================== */
+        .apresentacao{
+            width: 80%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+        .quem-somos{
+            width: 80%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+    /* FIM SECTION | apresentacao =================== */
+    /* INICIO SECTION | Serviços ======================= */
+        #servicos{
+            background: var(--darkBlue)
+        }
+        .list-servicos{
+            width: 80%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+        }
+    /* FIM SECTION | Serviços ================= */
+    /* INICIO SECTION | Planos ================ */
+        .list-planos{
+            width: 80%;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+            justify-content: space-around;
+            
+        }
+        #planos div{
+            width: 80%;
+
+        }
+    /* FIM SECTION | Planos ================ */
