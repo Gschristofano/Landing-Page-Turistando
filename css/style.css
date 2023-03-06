@@ -106,6 +106,9 @@ header .menu{
     display: flex;
     margin-bottom: 20px;
 }
+#quem-somos p{
+    margin-bottom: 10px;
+}
 
 #quem-somos h2::before{
     content: "";

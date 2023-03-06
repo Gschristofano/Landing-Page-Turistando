@@ -113,6 +113,7 @@ body{
         }
         .quem-somos div h2{
             display: flex;
+            margin-bottom: 10px;
         }
         .quem-somos div h2::before{
             content: " ";
