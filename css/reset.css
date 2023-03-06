@@ -8,4 +8,5 @@
     font: inherit;
     font-family: 'Nunito', sans-serif;
     transition: 0.2s;
+    box-sizing: border-box;
 }

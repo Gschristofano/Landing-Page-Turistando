@@ -57,8 +57,25 @@ body{
         align-items: center; 
 
     }
-    .list-menu li a{
+    .menu a{
+        display: flex;
         color: var(--white);
+        position: relative;
+    }
+    .menu a::after{
+        content: "";
+        width: 0%;
+        height: 4px;
+        background-color: var(--lightGray);
+        position: absolute;
+        margin-bottom: -5px;
+        bottom: 0;
+        left: 0;
+        transition: cubic-bezier(0.68, -0.55, 0.27, 1.55) 0.5s ;
+    }
+    .menu a:hover::after{
+        width: 100%;
+
     }
 /* FIM HEADER ======================= */
 /* INICIO MAIN ====================== */
@@ -98,7 +115,7 @@ body{
             display: flex;
         }
         .quem-somos div h2::before{
-            content: "";
+            content: " ";
             height: 0px;
             width: 5px;
             margin-right: 5px;
