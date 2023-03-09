@@ -18,7 +18,7 @@ body{
         align-items: center;
     }
     .cont-header{
-        width: 80%;
+        width: 75%;
         height: 80px;
 
         display: flex;
@@ -32,8 +32,16 @@ body{
         align-items: center;
         justify-content: space-around;
     }
+    .logo img{
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     .cont-logo h1{
         margin-left: 2%;
+        cursor: pointer;
     }
     .menu{
         width: 280px;
@@ -46,52 +54,200 @@ body{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        align-items: center;   
+        align-items: center; 
+
     }
-    .list-menu li a{
+    .menu a{
+        display: flex;
         color: var(--white);
+        position: relative;
+    }
+    .menu a::after{
+        content: "";
+        width: 0%;
+        height: 4px;
+        background-color: var(--lightGray);
+        position: absolute;
+        margin-bottom: -5px;
+        bottom: 0;
+        left: 0;
+        transition: cubic-bezier(0.68, -0.55, 0.27, 1.55) 0.5s ;
+    }
+    .menu a:hover::after{
+        width: 100%;
+
     }
 /* FIM HEADER ======================= */
 /* INICIO MAIN ====================== */
     /* INICIO SECTION | apresentacao ================== */
         .apresentacao{
-            width: 80%;
+            width: 75%;
             display: flex;
             flex-direction: row;
             align-items: center;
             justify-content: center;
+        }
+        .apresentacao button{
+            background-color: var(--darkBlue);
+            color: var(--white);
+            border: 2px solid var(--darkBlue);
+            border-radius: 30px;
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            margin: 10px 0px;
+        }
+        .apresentacao button:hover{
+            
+            background: var(--white);
+            color: var(--darkBlue);
+            border: 2px solid var(--darkBlue);
+            cursor: pointer;
         }
         .quem-somos{
-            width: 80%;
+            width: 75%;
             display: flex;
             flex-direction: row;
             align-items: center;
             justify-content: center;
         }
-    /* FIM SECTION | apresentacao =================== */
+        .quem-somos div h2{
+            display: flex;
+            margin-bottom: 10px;
+        }
+        .quem-somos div h2::before{
+            content: " ";
+            height: 0px;
+            width: 5px;
+            margin-right: 5px;
+            background-color: var(--darkBlue);
+            position: relative;
+            transition: ease-in-out 0.10s;
+        }
+        .quem-somos div h2:hover::before{
+            height: 40px;
+            transition: ease-in 0.22s;
+        }
+        /* FIM SECTION | apresentacao =================== */
     /* INICIO SECTION | Serviços ======================= */
         #servicos{
-            background: var(--darkBlue)
+            background: var(--darkBlue);
+            color: var(--white);
+            padding: 25px 0;
         }
         .list-servicos{
-            width: 80%;
+            width: 75%;
             display: flex;
             flex-direction: row;
             align-items: center;
             justify-content: space-around;
+            text-align: center;
+
+            margin-top: 25px;
+        }
+        .item-servicos p{
+            margin: 5px 0;
+        }
+        .item-servicos a{
+            background-color: var(--white);
+            border-radius: 30px;
+            text-align: center;
+            line-height: 50px;
+            padding: 5px 10px;
+            color: var(--darkBlue);
+            font-weight: 700;
+        }
+        .item-servicos a:hover{
+            background-color: var(--darkBlue);
+            color: var(--white);
+            border: 1px solid var(--white);
         }
     /* FIM SECTION | Serviços ================= */
     /* INICIO SECTION | Planos ================ */
         .list-planos{
-            width: 80%;
+            width: 75%;
             display: flex;
             flex-direction: row;
             align-items: flex-end;
             justify-content: space-between;
             
         }
-        #planos div{
-            width: 80%;
+        #planos .tittle-planos{
+            width: 75%;
 
         }
+        .item-planos{
+            flex: 1;
+            max-width: 250px;
+            border: 4px solid var(--darkBlue);
+            border-radius: 10px;
+            padding: 10px;
+        }
+        .cont-main{
+            padding: 10px;
+        }
+        .item-planos h3{
+            font-size: 24px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .item-planos h3::after{
+            content: "";
+            background-color: var(--darkBlue);
+            width: 100%;
+            height: 3px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .item-planos ul{
+            padding: 10px 20px;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+        }
+        
+        .item-planos ul li{
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+        }
+        
+        .item-planos ul li::before{
+            content: "";
+            width: 10px;
+            height: 10px;
+            background-color: var(--darkBlue);
+            margin-right: 5px;
+        }
+        .item-planos a{
+            display: flex;
+            background-color: var(--darkBlue);
+            color: var(--white);
+            border-radius: 30px;
+            text-align: center;
+            justify-content: center;
+            line-height: 50px;
+            font-weight: 700;
+            border: 2px solid var(--darkBlue);
+        }
+        .item-planos a:hover{
+            background-color: var(--lightGray);
+            border: 2px solid var(--darkBlue);
+            color: var(--darkBlue);
+        }
     /* FIM SECTION | Planos ================ */
+/* FIM MAIN =================== */
+/* FOOTER/RODAPÉ ================= */
+        footer{
+            width: 100%;
+            height: 25px;
+            background: var(--darkBlue);
+            color: var(--white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            margin-top: 20px;
+        }
